@@ -9,4 +9,4 @@ Full_Model.rds: the full model built from the whole dataset.
 
 Fundamental_Model.rds: the fundamental model built from one specific fundamental dataset.
 
-Partial_Model_1-11.rds: the models related to the fundamental model mentioned above.
+Partial_Model_1-11.rds: the partial combination models related to the fundamental model mentioned above.
