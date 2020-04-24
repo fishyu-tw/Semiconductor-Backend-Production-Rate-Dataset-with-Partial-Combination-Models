@@ -1,6 +1,5 @@
 # PartialCombinationModels
-A dataset from semiconductor assembly and testing processes is used to evaluate the model selection prediction method. The response variable refers to the throughput rate of a specific machine–product combination in one of the assembly and testing process steps based on historical data. This data set includes 1 resonse variable, 5 categorical machine and product attributes and 11 numerical attributes. The dataset contains 13186 observations.
-
+A dataset from semiconductor assembly and testing processes is used to evaluate the model selection prediction method. The response variable refers to the throughput rate of a specific machine–product combination in one of the assembly and testing process steps based on historical data. This data set includes 1 resonse variable, 5 categorical machine and product attributes and 11 numerical attributes. The dataset contains 13186 observations collected between Jan. 2019 and Jul. 2019 from a world-leading semiconductor assembly and testing company in Taiwan.
 mixed_categorical_numerical_data.csv: the raw data.
 
 mixed_categorical_numerical_dataDummy.csv: the transformed one-hot encoded data.
