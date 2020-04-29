@@ -11,9 +11,9 @@ Fundamental_Model.rds: the fundamental model built from one specific fundamental
 
 Partial_Model_1-11.rds: the partial combination models related to the fundamental model mentioned above.
 
-training datasets : Full_training_dataset,Partial_1-11_training_dataset and Fundamental_training_dataset.
+Training datasets : Full_training_dataset,Partial_1-11_training_dataset and Fundamental_training_dataset.
 
-validation datasets : Full_validation_dataset,Partial_1-11_validation_dataset and Fundamental_validation_dataset.
+Validation datasets : Full_validation_dataset,Partial_1-11_validation_dataset and Fundamental_validation_dataset.
 
 Prediction steps :
 We construct xgb.DMatrix object and use our model to make predictions and calculate the rmse index.
