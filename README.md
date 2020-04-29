@@ -10,3 +10,13 @@ Full_Model.rds: the full model built from the whole dataset.
 Fundamental_Model.rds: the fundamental model built from one specific fundamental dataset.
 
 Partial_Model_1-11.rds: the partial combination models related to the fundamental model mentioned above.
+
+training datasets : Full_training_dataset,Partial_1-11_training_dataset and Fundamental_training_dataset for Figure(2).
+
+validation datasets : Full_validation_dataset,Partial_1-11_validation_dataset and Fundamental_validation_dataset for Figure(2).
+
+Prediction steps :
+We construct xgb.DMatrix object and use our model to make predictions and calculate the rmse index.
+The input dataset(x) and label(y) need to be stored separately and the function code is as follows: 
+xgb.DMatrix(label = y, data = as.matrix(x))
+
