@@ -3,19 +3,23 @@ A dataset from semiconductor assembly and testing processes is used to evaluate 
 
 mixed_categorical_numerical_data.csv: the raw data.
 
-mixed_categorical_numerical_dataDummy.csv: the transformed one-hot encoded data.
+mixed_categorical_numerical_data(one-hot encoded).csv: the transformed one-hot encoded data.
 
-Full_Model.rds: the full model built from the whole dataset.
++ one-specific-fundamental-dataset
+  + models-trained
+    - Full_Model.rds: the full model built from the whole dataset.
+	- Fundamental_Model.rds: the fundamental model built from one specific fundamental dataset.
+	- Partial_Model_1-11.rds: the partial combination models related to the fundamental model mentioned above.
+  + fundamental-training-datasets
+    - Full_training_dataset.csv: to evaludate RMSE_Tr of Full_Model.rds. 
+	- Fundamental_training_dataset.csv: to evaludate RMSE_Tr of Fundamental_Model.rds.
+	- Partial_1-11_training_dataset.csv: to evaludate RMSE_Tr of Partial_Model_1-11.rds.  
+  + fundamental-evaluation-datasets
+    - Full_evaluation_dataset.csv: to evaludate RMSE_V of Full_Model.rds.
+	- Fundamental_evaluation_dataset.csv: to evaludate RMSE_V of Fundamental_Model.rds.
+	- Partial_1-11_evaluation_dataset.csv: to evaludate RMSE_V of Partial_Model_1-11.rds. 
 
-Fundamental_Model.rds: the fundamental model built from one specific fundamental dataset.
-
-Partial_Model_1-11.rds: the partial combination models related to the fundamental model mentioned above.
-
-Training datasets : Full_training_dataset,Partial_1-11_training_dataset and Fundamental_training_dataset.
-
-Validation datasets : Full_validation_dataset,Partial_1-11_validation_dataset and Fundamental_validation_dataset.
-
-Prediction steps :
+Note: the Prediction steps:
 We construct xgb.DMatrix object and use our model to make predictions and calculate the rmse index.
 The input dataset(x) and label(y) need to be stored separately and the function code is as follows: 
 xgb.DMatrix(label = y, data = as.matrix(x))
